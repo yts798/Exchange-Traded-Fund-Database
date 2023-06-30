@@ -1,0 +1,10 @@
+Schema
+（code（key），date（key），close， open, high, low, change，，amount, balance） 
+（code（key），name，index，list_dt, company, class)
+
+ETF设计
+每日数据：每日更新
+(ETF代码（键），日期（键），收盘价，开盘价，最高价，最低价，日涨跌幅，日均成交（万），规模）
+
+基础数据：不更新，固定
+（ETF代码（键），中文名，跟踪指数名，上市日，运作公司，etf分类）
