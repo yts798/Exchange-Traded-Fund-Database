@@ -1,1 +1,0 @@
-python crawler_ezj.py

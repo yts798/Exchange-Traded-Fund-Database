@@ -1,1 +1,0 @@
-python sw_crawler.py

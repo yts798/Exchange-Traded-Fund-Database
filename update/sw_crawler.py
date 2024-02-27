@@ -73,6 +73,7 @@ def getpinyin(string):
 
 data_response = requests.get( "https://www.swsresearch.com/institute-sw/api/index_publish/current/?page=1&page_size=50&indextype=%E4%B8%80%E7%BA%A7%E8%A1%8C%E4%B8%9A")
 
+print(data_response)
 data = data_response.json()
 
 alll = []
@@ -93,4 +94,4 @@ alll = np.array(alll)
 idx = ['name', 'code', 'open', 'close', 'low', 'high', 'amount', 'number']
 allst = [getpinyin(i) for i in allnames]
 sw_df = pd.DataFrame(alll.T, columns=allst, index=idx)
-sw_df.to_csv(datetime.date.today().strftime('%Y-%m-%d') + '-swid.csv', encoding='utf-8_sig')
+sw_df.to_csv(datetime.date.today().strftime('%Y-%m-%d') + '-swid.csv')
